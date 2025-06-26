@@ -25,7 +25,8 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: #ffffff;
+   background: #ffffff;
+/* background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(203, 242, 220, 1) 0%, rgba(255, 255, 255, 1) 100%); */
       z-index: 9999;
       display: flex;
       align-items: center;
@@ -47,7 +48,7 @@
       }
     }
   </style>
-  <script type="module" crossorigin src="/project-chandana-2025-vue-website/assets/index-BddGTf9X.js"></script>
+  <script type="module" crossorigin src="/project-chandana-2025-vue-website/assets/index-CtNr4tfT.js"></script>
   <link rel="stylesheet" crossorigin href="/project-chandana-2025-vue-website/assets/index.vFn5uR4O.css">
 </head>
 <body>
@@ -55,21 +56,24 @@
   <!-- Preloader -->
   <div id="preloader">
     <div class="spinner"></div>
+    <div class="logo">
+          
+          <div class="logo-text">
+            <h1>PROJECT CHAnDAnA</h1>
+            <p>National Sickle Cell Anemia Elimination Mission</p>
+          </div>
+        </div>
   </div>
 
   <!-- Vue App -->
   <div id="app"></div>
 
-  <!-- Vue App Script -->
+  <!-- Load Vue App Script (will be delayed inside main.js) -->
+<style>
+  .logo {
+  margin-left: 2rem;
+}
 
-  <!-- Hide Preloader After Page Load -->
-  <script>
-    window.addEventListener('load', () => {
-      const preloader = document.getElementById('preloader');
-      if (preloader) {
-        preloader.style.display = 'none';
-      }
-    });
-  </script>
+</style>
 </body>
 </html>
